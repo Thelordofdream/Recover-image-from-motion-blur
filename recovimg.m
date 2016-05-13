@@ -62,7 +62,9 @@ elseif rio <30
 elseif rio >130
     THETA = rio-7;    
 elseif rio <50
-    THETA = rio+7;  
+    THETA = rio+7;
+else
+    THETA = rio;
 end
 THETA
 axis([-500 500 -500 500]);
